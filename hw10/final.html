@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+	<meta charset="utf-8">
+	<title>遊子吟</title>
+	<style type="text/css">
+		#myimage{
+			width: 370px;
+			height: 250px;
+			background: url(Screenshot110656.png) no-repeat;
+			position:absolute;
+			top:80px;
+			left:80px
+		}
+		/* Global */
+		html{
+		  min-height: 100%;
+		  overflow: hidden;
+		}
+		body{
+		  padding: 1em;
+		  color: rgba(0,0,0,0.75);
+		  font-family: 'Anonymous Pro', monospace;  
+		  background-color: rgb(115, 177, 235);  
+		}
+		.line-1{
+		    position: relative;
+		    top: 50%;  
+		    margin: 0 auto;
+		    border-left: 2px solid rgba(0,0,0,.75);
+		    font-size: 20pt;
+		    white-space: nowrap;
+		    overflow: hidden;
+		    transform: translateY(-50%);    
+		}
+
+		/* Animation */
+		.anim-typewriter{
+		  animation: typewriter 2s steps(3000) 1s 1 normal both,
+		             blinkTextCursor 1000ms steps(3000) infinite normal;
+		}
+		@keyframes typewriter{
+		  from{width: 0;}
+		  to{width: 66em;}
+		}
+		@keyframes blinkTextCursor{
+		  from{border-left-color: rgba(0,0,0,.75);}
+		  to{border-left-color: transparent;}
+		}
+
+		@font-face {
+		  font-family: BpmfZihiKaiStd-Regular;
+		  src: url(./BpmfZihiKaiStd-Regular.woff2);
+		  font-weight: bold;
+		}
+		
+		@font-face {
+		  font-family: SimilarityFont;
+		  src: url(./111598042.ttf);
+		  font-weight: bold;
+		}
+		
+		@font-face {
+		  font-family: MyFont;
+		  src: url(./JasonHandwriting6p.ttf);
+		  font-weight: bold;
+		}
+
+		body {
+			writing-mode: vertical-rl;
+			font-family: 'BpmfZihiKaiStd-Regular', serif; /* BpmfZihiKaiStd.zip : 字嗨注音標楷 */
+			line-height: 3.5em;
+		}
+
+		p {
+			font-size: 24pt;
+			padding: 8px 0px;
+		}
+
+		.title {
+			font-family: 'MyFont', serif;
+		}
+
+		.myself {
+			font-family: 'MyFont', serif;
+			position: absolute;
+			top: 220px;
+			right: 160px;
+		}
+
+		.friend {
+			font-family: 'SimilarityFont', serif;
+			position: absolute;
+			top: 630px;
+			right: 160px;
+		}
+
+		p {
+			border: solid white 1px;
+			height: 380px;
+		}
+
+		a {
+			color: yellow;
+		}
+	</style>
+</head>
+<body>
+
+<a href="https://github.com/circle472/ct2022s/tree/main/hw04">CircleFont.ttf</a>, <a href="https://github.com/ButTaiwan/bpmfvs/releases">字嗨注音標楷</a>, <a href="https://fontforge.org/en-US/">FontForge 字體鍛造</a>
+
+<h1 class="title">遊子吟</h1>
+<br>
+<br>
+<br>
+
+<p class="line-1 anim-typewriter myself">
+107590049黃澤然<br>
+慈母手中線，<br>
+遊子身上衣。<br>
+臨行密密縫，<br>
+意恐遲遲歸。<br>
+誰言寸草心，<br>
+報得三春暉。<br>
+</p>
+
+<p class="line-1 anim-typewriter friend">
+111598033 詹智釣<br>
+慈母手中線，<br>
+遊子身上衣。<br>
+臨行密密縫，<br>
+意恐遲遲歸。<br>
+誰言寸草心，<br>
+報得三春暉。<br>
+</p>
+
+<div id="myimage">
+</div>
+
+
+</body>
+</html>
